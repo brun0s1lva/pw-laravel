@@ -95,6 +95,11 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+    {        
+        CategoriaModel::where('id',$id)->delete();
+        return redirect("/categoria");
+    }
+
     }
 }

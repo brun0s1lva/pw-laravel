@@ -18,6 +18,7 @@ Route::get('/', function () {
 //Route é um classe, que esta sendo acessado pelo metodo get, que está recebendo dois parametros
 Route::get('/categoria','CategoriaController@index');
 Route::post('/categoria/inserir','CategoriaController@store');
+Route::get('/categoria/{id}','CategoriaController@destroy');
 
 Route::get('/cliente','ClienteController@index');
 
@@ -26,6 +27,11 @@ Route::post('/contato/inserir','ContatoController@store');
 Route::get('/contato/{id}','ContatoController@destroy');
 
 Route::get('/pedido','PedidoController@index');
+
+
 Route::get('/produto','ProdutoController@index');
+Route::post('/produto/inserir','ProdutoController@store');
+Route::get('/produto/{id}','ProdutoController@destroy');
+
 
 

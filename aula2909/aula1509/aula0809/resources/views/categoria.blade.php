@@ -30,6 +30,8 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Categoria</th>
+      <th scope="col">&nbsp;</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -38,6 +40,7 @@
     <tr>
         <td>{{$cat->id}}</td>  
         <td>{{$cat->categoria}}</td> 
+        <td> <a href="/categoria/{{$cat->id}}"> Excluir </a> </td>
     </tr>
   @endforeach
   </tbody>
